@@ -1,0 +1,114 @@
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  &:disabled {
+    filter: grayscale(1);
+    opacity: .3;
+    pointer-events: none;
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+ustify-contenttable, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font: normal 100 13.5px/1.4 $font-primary;
+  background-color: $cl-white;
+}
+h3 {
+  font: normal 700 20px/1.8 $font-primary;
+  text-transform: uppercase;
+}
+h4 {
+  font: normal 700 15px/1 $font-primary;
+  text-transform: uppercase;
+  span {
+    color: $cl-green;
+  }
+}
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  p {
+    line-height: 1.2;
+    letter-spacing: -.9px;
+  }
+}
+.is-disabled {
+  display: none;
+}
+
+@page {
+  size: 21cm 29.7cm;
+  margin: 0cm !important;
+}
+
+@media only screen {
+  @include breakpoint(md) {
+    body {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 33px;
+    }
+    h4 {
+      font-size: 17px;
+    }
+    li {
+      margin-bottom: 14px;
+      p {
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+@media only print {
+  @include breakpoint(sm) {
+    body {
+      font-size: 11px;
+      p {
+        letter-spacing: 0;
+        line-height: 1.2;
+      }
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 13px;
+    }
+    li {
+      margin-bottom: 7px;
+    }
+  }
+}

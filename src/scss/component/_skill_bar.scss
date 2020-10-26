@@ -1,0 +1,71 @@
+.c-skillBar {
+  position: relative;
+  padding-bottom: 12px;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 5px;
+    border-radius: 3px;
+  }
+  &:before {
+    width: 100%;
+    background: $cl-icon;
+  }
+  &:after {
+    background: $cl-green;
+  }
+}
+.c-skillBar__pl {
+  &:after {
+    width: 95%;
+  }
+}
+.c-skillBar__en {
+  &:after {
+    width: 90%;
+  }
+}
+.c-skillBar__css {
+  &:after {
+    width: 90%;
+  }
+}
+.c-skillBar__js {
+  &:after {
+    width: 60%;
+  }
+}
+.c-skillBar__php {
+  &:after {
+    width:80%;
+  }
+}
+
+@media only screen {
+  @include breakpoint(md) {
+    .c-skillBar {
+      padding-bottom: 18px;
+      
+      &:before,
+      &:after {
+        height: 10px;
+      }
+    }
+  }
+}
+
+@media only print {
+  @include breakpoint(sm) {
+    .c-skillBar {
+      padding-bottom: 12px;
+    
+      &:before,
+      &:after {
+        height: 6px;
+      }
+    }
+  }
+}

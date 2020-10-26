@@ -1,0 +1,164 @@
+@mixin font-base($font-level, $font-style) {
+  @if ($font-level == 'primary') {$font-level: $font-primary}
+  @else if ($font-level == 'secondary') {$font-level: $font-secondary}
+
+  font-family: $font-level, sans-serif;
+  font-display: swap;
+  font-style: $font-style;
+}
+
+@font-face {
+  @include font-base(primary, normal);
+  font-weight: 100;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-100.eot');
+  src: local('Lato Hairline'), local('Lato-Hairline'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, normal);
+  font-weight: 300;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-300.eot');
+  src: local('Lato Light'), local('Lato-Light'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, italic);
+  font-weight: 100;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-100italic.eot');
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100italic.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100italic.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100italic.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100italic.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-100italic.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, italic);
+  font-weight: 300;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-300italic.eot');
+  src: local('Lato Light Italic'), local('Lato-LightItalic'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300italic.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300italic.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300italic.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300italic.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-300italic.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, normal);
+  font-weight: 400;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+url('#{$font-src}/lato-v16-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-regular.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-regular.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-regular.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-regular.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, normal);
+  font-weight: 700;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-700.eot');
+  src: local('Lato Bold'), local('Lato-Bold'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, italic);
+  font-weight: 400;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-italic.eot');
+  src: local('Lato Italic'), local('Lato-Italic'),
+url('#{$font-src}/lato-v16-latin-ext_latin-italic.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-italic.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-italic.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-italic.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-italic.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, italic);
+  font-weight: 700;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-700italic.eot');
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700italic.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700italic.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700italic.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700italic.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-700italic.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, normal);
+  font-weight: 900;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-900.eot');
+  src: local('Lato Black'), local('Lato-Black'),
+url('#{$font-src}/lato-v16-latin-ext_latin-900.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-900.woff2') format('woff2'),
+url('#{$font-src}/lato-v16-latin-ext_latin-900.woff') format('woff'),
+url('#{$font-src}/lato-v16-latin-ext_latin-900.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-900.svg#Lato') format('svg');
+}
+@font-face {
+  @include font-base(primary, italic);
+  font-weight: 900;
+  src: url('#{$font-src}/lato-v16-latin-ext_latin-900italic.eot');
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'),
+  url('#{$font-src}/lato-v16-latin-ext_latin-900italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-src}/lato-v16-latin-ext_latin-900italic.woff2') format('woff2'),
+  url('#{$font-src}/lato-v16-latin-ext_latin-900italic.woff') format('woff'),
+  url('#{$font-src}/lato-v16-latin-ext_latin-900italic.ttf') format('truetype'),
+url('#{$font-src}/lato-v16-latin-ext_latin-900italic.svg#Lato') format('svg');
+}
+
+@font-face {
+  @include font-base(secondary, normal);
+  font-weight: 400;
+  src: url('#{$font-src}/pt-sans-v11-latin-ext_latin-regular.eot');
+  src: local('PT Sans'), local('PTSans-Regular'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-regular.woff2') format('woff2'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-regular.woff') format('woff'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-regular.ttf') format('truetype'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-regular.svg#PTSans') format('svg');
+}
+@font-face {
+  @include font-base(secondary, italic);
+  font-weight: 400;
+  src: url('#{$font-src}/pt-sans-v11-latin-ext_latin-italic.eot');
+  src: local('PT Sans Italic'), local('PTSans-Italic'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-italic.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-italic.woff2') format('woff2'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-italic.woff') format('woff'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-italic.ttf') format('truetype'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-italic.svg#PTSans') format('svg');
+}
+@font-face {
+  @include font-base(secondary, normal);
+  font-weight: 700;
+  src: url('#{$font-src}/pt-sans-v11-latin-ext_latin-700.eot');
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-700.woff2') format('woff2'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-700.woff') format('woff'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-700.ttf') format('truetype'),
+url('#{$font-src}/pt-sans-v11-latin-ext_latin-700.svg#PTSans') format('svg');
+}
+@font-face {
+  @include font-base(secondary, italic);
+  font-weight: 700;
+  src: url('#{$font-src}/pt-sans-v11-latin-ext_latin-700italic.eot');
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'),
+  url('#{$font-src}/pt-sans-v11-latin-ext_latin-700italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-src}/pt-sans-v11-latin-ext_latin-700italic.woff2') format('woff2'),
+  url('#{$font-src}/pt-sans-v11-latin-ext_latin-700italic.woff') format('woff'),
+  url('#{$font-src}/pt-sans-v11-latin-ext_latin-700italic.ttf') format('truetype'),
+  url('#{$font-src}/pt-sans-v11-latin-ext_latin-700italic.svg#PTSans') format('svg');
+}

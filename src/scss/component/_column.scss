@@ -1,0 +1,200 @@
+.c-column {
+  &__right {
+    *:before,
+    *:after {
+      right: 0;
+    }
+    ul {
+      justify-content: flex-start;
+    }
+  }
+  &__center {
+    position: relative;
+    display: none;
+    width: 40px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      height: 90%;
+      width: 5px;
+      background-image: linear-gradient(180deg, $cl-white 0%, $cl-icon 15%, $cl-icon 85%, $cl-white 100%);
+    }
+  }
+  &__profile {
+    p {
+      display: inline-block;
+      width: 90%;
+      line-height: 1.12;
+      padding-bottom: 5px;
+      letter-spacing: -.6px;
+    }
+  }
+  &__education {
+    p {
+      display: inline-block;
+      width: 90%;
+    }
+  }
+  &__language,
+  &__skills {
+    li,
+    .c-skill-tiles {
+      width: 80%;
+    }
+  }
+  &__hobby {
+    .fas {
+      display: inline-block;
+      font-size: 23px;
+      color: $cl-icon;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen {
+  @include breakpoint(lg) {
+    .c-column {
+      display: flex;
+      justify-content: center;
+      
+      &__left {
+        text-align: right;
+        
+        *:before,
+        *:after {
+          left: 0;
+        }
+  
+        ul {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        
+        .c-skillBar {
+          &:before,
+          &:after {
+            right: 0;
+            left: auto;
+          }
+        }
+        
+        .c-headerIcon {
+          position: relative;
+          
+          &:before {
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+      
+      &__left,
+      &__right {
+        width: calc(50% - 20px);
+        margin: 15px 0 0;
+        
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+      }
+      
+      &__center {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only print {
+  @include breakpoint(sm) {
+    .c-column {
+      display: flex;
+      justify-content: center;
+      
+      &__left {
+        text-align: right;
+        
+        *:before,
+        *:after {
+          left: 0;
+        }
+  
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        
+        .c-skillBar {
+          &:before,
+          &:after {
+            right: 0;
+            left: auto;
+          }
+        }
+        
+        .c-headerIcon {
+          position: relative;
+          
+          &:before {
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+      
+      &__left,
+      &__right {
+        width: calc(50% - 20px);
+        margin: 15px 0 0;
+      }
+
+      &__profile {
+        p {
+          line-height: 1.1;
+          padding-bottom: 4px;
+          letter-spacing: -.4px;
+        }
+      }
+
+      &__language,
+      &__skills {
+        ul {
+          li {
+            width: 80%;
+          }
+        }
+      }
+
+      &__center {
+        display: block;
+        &:before {
+          width: 3px;
+        }
+      }
+  
+      &__experience {
+        p {
+          letter-spacing: -.2px;
+        }
+      }
+
+      &__hobby {
+        .fas {
+          display: inline-block;
+          font-size: 18px;
+          color: $cl-icon;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}

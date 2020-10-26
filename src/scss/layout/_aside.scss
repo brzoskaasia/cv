@@ -1,0 +1,57 @@
+.l-aside {
+  position: fixed;
+  display: none;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  transform: translateY(-50%);
+  color: $cl-white;
+  background: $cl-green;
+  padding: 2px 0;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 1;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    
+  }
+  &:before {
+    bottom: 94%;
+    border-bottom: 35px solid $cl-green;
+    border-left: 43px solid transparent;
+  }
+  &:after {
+    top: 94%;
+    border-top: 35px solid $cl-green;
+    border-left: 43px solid transparent;
+  }
+}
+
+@media only screen {
+  @include breakpoint(md) {
+    .l-aside {
+      &:before {
+        bottom: 96%;
+      }
+      &:after {
+        top: 96%;
+      }
+      i {
+        opacity: .75;
+        transition: opacity .2s linear;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media only print {
+  .l-aside {
+    display: none !important;
+  }
+}

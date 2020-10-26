@@ -1,0 +1,37 @@
+.c-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+@media only screen {
+  @include breakpoint(sm) {
+    .c-container {
+      max-width: 540px;
+    }
+  }
+  @include breakpoint(md) {
+    .c-container {
+      max-width: 720px;
+    }
+  }
+  @include breakpoint(lg) {
+    .c-container {
+      max-width: 960px;
+    }
+  }
+  @include breakpoint(xl) {
+    .c-container {
+      max-width: 1140px;
+    }
+  }
+}
+@media only print {
+  .c-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 5px 20px 15px;
+  }
+}

@@ -1,0 +1,9 @@
+.c-row {
+  margin-bottom: 20px;
+}
+
+@media only print {
+  .c-row {
+    margin-bottom: 11px;
+  }
+}

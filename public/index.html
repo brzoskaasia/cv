@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joanna Brzóska - Curriculum Vitae</title>
+    <link rel="stylesheet" href="./main.min.css">
+</head>
+
+<body>
+    <input id="more" class="c-menu__moreInput is-disabled" type="checkbox"></input>
+    <div class="p-home c-container">
+        <header class="l-header__flex">
+            <div class="c-row">
+                <div class="l-header__center c-row">
+                    <img class="l-header__avatar" src="./images/avatar.jpg" alt="avatar">
+                    <h2 class="l-header__name">Joanna</h2>
+                    <h2 class="l-header__subname">Brzóska</h2>
+                </div>
+                <div class="c-row c-links">
+                    <ul>
+                        <li class="c-links__adress">
+                            <a href="https://goo.gl/maps/KmdACJdiYV6Gxgi49" target="_blank">
+                                <i class="fas fa-map-marked-alt"
+                                    title="ul. Krasińskiego 1/29, 32-300 Olkusz, Polska"></i>
+                            </a>
+                        </li>
+                        <li class="c-links__mail">
+                            <a href="mailto:brzoskaasia@gmail.com">
+                                <i class="fas fa-envelope" title="brzoskaasia@gmail.com"></i>
+                            </a>
+                        </li>
+                        <li class="c-links__linkedin">
+                            <a href="https://www.linkedin.com/in/brzoskaasia/" target="_blank">
+                                <i class="fab fa-linkedin" title="linkedin.com/in/brzoskaasia"></i>
+                            </a>
+                        </li>
+                        <li class="c-links__phone">
+                            <a href="tel:+48517535863" target="_blank">
+                                <i class="fas fa-phone" title="+48 517 535 863"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="c-menu__more">
+            <label class="c-menu__moreLabel" for="more">
+                <i class="fas fa-mouse"></i>
+                <div class="c-menu__arrows">
+                    <span class="c-menu__arrow"></span>
+                    <span class="c-menu__arrow"></span>
+                    <span class="c-menu__arrow"></span>
+                </div>
+            </label>
+        </div>
+        <input id="pl" class="p-lang__radioPl is-disabled" type="radio" name="lang" checked></input>
+        <input id="en" class="p-lang__radioEn is-disabled" type="radio" name="lang"></input>
+        <aside class="l-aside">
+            <div class="c-menu c-content">
+                <label class="p-lang__label p-lang__labelPl" for="pl">
+                    <p>PL</p>
+                </label>
+                <label class="p-lang__label p-lang__labelEn" for="en">
+                    <p>EN</p>
+                </label>
+                <a class="p-lang__pdf p-lang__pdfPl" href="/cv_pl.pdf" download>
+                    <i class="fas fa-print"></i>
+                </a>
+                <a class="p-lang__pdf p-lang__pdfEn" href="/cv_en.pdf" download>
+                    <i class="fas fa-print"></i>
+                </a>
+                <i class="p-lang__pdf p-lang__print fas fa-print" onclick="window.print()"></i>
+            </div>
+        </aside>
+        <main class="l-main">
+            <div class="p-lang__main p-lang__mainPl c-column">
+                <div class="c-column__left">
+                    <div class="c-row c-column__profile">
+                        <h3 class="c-headerIcon c-headerIcon__profile">Profil Zawodowy</h3>
+                        <p>Od marca 2018 roku rozpoczęłam swoją przygodę jako <b>Tester IT</b>.</p>
+                        <p><b>Działalność gosp.</b> w tym zakresie otworzyłam w listopadzie 2018 roku.</p>
+                        <!--                    <p><b>Porftolio e-veloper.pl</b> jest wyrazem moich studiów, szkoleń
+                                                    i nabytego przeze mnie doświadczenia pracy z klientami.</p>-->
+                        <p><b>Jestem zainteresowana</b> pracą w zespole, zwiększaniem swoich umiejętności, poznawaniem
+                            nowych ludzi i wymianą pomysłów.</p>
+                        <p><b>Mój cel zawodowy</b> to poszerzanie i zdobywanie nowej wiedzy z zakresu: języka Python,
+                            automatyzacji testów backendu (Postman, JMeter) i frontendu (Ranorex, Selenium) </p>
+                    </div>
+                    <div class="c-row c-column__education">
+                        <h3 class="c-headerIcon c-headerIcon__education">Edukacja</h3>
+                        <ul>
+                            <li>
+                                <h4><span>UMK, Toruń</span> 10.2005 - 07.2010</h4>
+                                <p>Wydział Nauk Historycznych,</p>
+                                <p>kierunek: <b>Etnologia</b>,</p>
+                            </li>
+                            <li>
+                                <h4><span>Cosinus, Toruń</span> 09.2007 - 06.2009</h4>
+                                <p>Szkoła policealna, kierunek: Technik administracji,</p>
+                            </li>
+                            <li>
+                                <h4><span>VIII LO, Toruń</span> 09.2002 - 06.2005</h4>
+                                <p>Profil: prawno-obywatelski.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-row c-column__language">
+                        <h3 class="c-headerIcon c-headerIcon__language">Języki</h3>
+                        <ul>
+                            <li>
+                                <p class="c-skillBar c-skillBar__pl">polski - ojczysty</p>
+                            </li>
+                            <li>
+                                <p class="c-skillBar c-skillBar__en">angielski</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-row c-column__certyfication">
+                        <h3 class="c-headerIcon c-headerIcon__certyfication">Certyfikaty</h3>
+                        <ul>
+                            <li>
+                                <h4><span>Specjalność Programista: Podstawy Pythona 2 Edycja</span> 06.2020</h4>
+                                <p>akademiakodu.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Jira od podstaw - zarządzanie projektem</span> 04.2011</h4>
+                                <p>strefakursow.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Microsoft SQL Server - od podstaw</span> 04.2008</h4>
+                                <p>strefakursow.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Specjalność Programista: Podstawy Pythona</span> 04.2005</h4>
+                                <p>akademiakodu.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Kurs bazy danych MySQL od podstaw</span> 05.2019</h4>
+                                <p>akademiakodu.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>ISTQB Certyfikowany Tester Poziom Podstawowy</span> 03.2018</h4>
+                                <p>ISTQB - International Software Testing Qualifications Board</p>
+                            </li>
+                            <li>
+                                <h4><span>Podstawy marketingu internetowego</span> 02.2018</h4>
+                                <p>Google</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-column__center">
+                </div>
+                <div class="c-column__right">
+                    <div class="c-row c-column__experience">
+                        <h3 class="c-headerIcon c-headerIcon__experience">Doświadczenie</h3>
+                        <ul>
+                            <li>
+                                <h4>07.2019 - ∞<span> Diebold Nixdorf</span></h4>
+                                <p>Dufry, Vynamic Engage</p>
+                                <p>Stanowisko: <b>Junior Test Engineer</b></p>
+                            </li>
+                            <li>
+                                <h4>11.2018 - ∞<span> quaTest</span></h4>
+                                <p>Własna działaność gospodarcza</p>
+                                <p>Stanowisko: <b>Tester IT</b></p>
+                            <li>
+                                <h4>03.2018 - 06.2018<span> testuj.pl</span></h4>
+                                <p>Praktyki zawodowe</p>
+                                <p>Stanowisko: <b>Praktykantka</b></p>
+                            </li>
+                            <li>
+                                <h4>05.2013 - 06.2018<span> Bank Millennium SA</span></h4>
+                                <p>Stanowisko: <b>Asystent/ Konsultant ds. obsługi klienta</b></p>
+                            </li>
+                            <li>
+                                <h4>11.2011 - 03.2013<span> Sygma Banque SA</span></h4>
+                                <p>Stanowisko: <b>Młodszy Specjalista/ Specjalista ds. Sprzedaży</b></p>
+                            </li>
+                            <li>
+                                <h4>11.2010 - 08.2011<span> Lukas bank SA</span></h4>
+                                <p>Stanowisko: <b>Doradca Junior</b></p>
+                            </li>
+                            <li>
+                                <h4>05.2009 - 06.2010<span> Columbus</span></h4>
+                                <p>Stanowisko: <b>Konsultant ds. Klienta (Lider zespołu)</b></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-row c-column__skills">
+                        <h3 class="c-headerIcon c-headerIcon__skills">Umiejętności</h3>
+                        <ul>
+                            <li>
+                                <p class="c-skillBar c-skillBar__css">Testy manualne</p>
+                            </li>
+                            <li>
+                                <p class="c-skillBar c-skillBar__js">MySQL</p>
+                            </li>
+                            <li>
+                                <p class="c-skillBar c-skillBar__php">Jira</p>
+                            </li>
+                        </ul>
+                        <div class="c-skill-tiles">
+                            <p class="c-skill-tile">swagger</p>
+                            <p class="c-skill-tile">confluence</p>
+                            <p class="c-skill-tile">bitbucket</p>
+                            <p class="c-skill-tile">azure</p>
+                            <p class="c-skill-tile">postman - basic</p>
+                            <p class="c-skill-tile">python - basic</p>
+                            <p class="c-skill-tile">greenshot</p>
+                            <p class="c-skill-tile">apower rec</p>
+                            <p class="c-skill-tile">ISTQB</p>
+                            <p class="c-skill-tile">trello</p>
+                            <p class="c-skill-tile">scrum</p>
+                            <p class="c-skill-tile">agile</p>
+                        </div>
+                    </div>
+                    <div class="c-row c-column__hobby">
+                        <h3 class="c-headerIcon c-headerIcon__hobby">Zainsteresowania</h3>
+                        <div>
+                            <i class="fas fa-code"></i>
+                            <i class="fas fa-paw"></i>
+                            <i class="fas fa-puzzle-piece"></i>
+                            <i class="fas fa-film"></i>
+                            <i class="fas fa-hiking"></i>
+                            <i class="fas fa-bug"></i>
+                            <i class="fas fa-theater-masks"></i>
+                            <i class="fas fa-swimmer"></i>
+                        </div>
+                    </div>
+                    <div class="c-row c-column__targets">
+                        <h3 class="c-headerIcon c-headerIcon__targets">Cel</h3>
+                        <p class="c-skill-tile">testy automatyczne backendu</p>
+                        <p class="c-skill-tile">testy automatyczne frontendu</p>      
+                    </div>
+                </div>
+            </div>
+            <div class="p-lang__main p-lang__mainEn c-column">
+                <div class="c-column__left">
+                    <div class="c-row c-column__profile">
+                        <h3 class="c-headerIcon c-headerIcon__profile">job Profile</h3>
+                        <p>From March 2018, I started my adventure as a <b>IT Tester</b>.</p>
+                        <p>I started <b>my business</b> in this area in 2018.</p>
+                        <!--                    <p><b>Porftolio e-veloper.pl</b> jest wyrazem moich studiów, szkoleń
+                                                    i nabytego przeze mnie doświadczenia pracy z klientami.</p>-->
+                        <p><b>I am interested</b> in working in a team, expanding my skills, meeting new people and
+                            exchanging ideas.</p>
+                        <p><b>My professional goal is</b> to constantly expand my knowledge mainly in the field of:
+                            Python, backend (Postman, JMeter) and frontend (Ranorex, Selenium) test automatization. </p>
+                    </div>
+                    <div class="c-row c-column__education">
+                        <h3 class="c-headerIcon c-headerIcon__education">Education</h3>
+                        <ul>
+                            <li>
+                                <h4><span>UMK, Torun</span> 10.2005 - 07.2010</h4>
+                                <p>Faculty of historical sciences,</p>
+                                <p>Field of study: <b>Ethnology</b>,</p>
+                            </li>
+                            <li>
+                                <h4><span>Cosinus, Torun</span> 09.2007 - 06.2009</h4>
+                                <p>Post-secondary school, Field of study: Administration technician,</p>
+                            </li>
+                            <li>
+                                <h4><span>VIII Secondary School, Torun</span> 09.2002 - 06.2005</h4>
+                                <p>Profile: Legal and civic.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-row c-column__language">
+                        <h3 class="c-headerIcon c-headerIcon__language">Languages</h3>
+                        <ul>
+                            <li>
+                                <p class="c-skillBar c-skillBar__pl">polish - native</p>
+                            </li>
+                            <li>
+                                <p class="c-skillBar c-skillBar__en">english</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-row c-column__certyfication">
+                        <h3 class="c-headerIcon c-headerIcon__certyfication">Certifications</h3>
+                        <ul>
+                            <li>
+                                <h4><span>Speciality Programmer: Basics of Python 2nd Edition</span> 06.2020</h4>
+                                <p>akademiakodu.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Jira from begining - project management</span> 04.2011</h4>
+                                <p>strefakursow.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Microsoft SQL Server - from begining</span> 04.2008</h4>
+                                <p>strefakursow.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>Speciality Programmer: Basics of Python</span> 04.2005</h4>
+                                <p>akademiakodu.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>MySQL database course from begining</span> 05.2019</h4>
+                                <p>akademiakodu.pl</p>
+                            </li>
+                            <li>
+                                <h4><span>ISTQB Certified Tester Foundation Level</span> 03.2018</h4>
+                                <p>ISTQB - International Software Testing Qualifications Board</p>
+                            </li>
+                            <li>
+                                <h4><span>Basics of Internet Marketing</span> 02.2018</h4>
+                                <p>Google</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-column__center">
+                </div>
+                <div class="c-column__right">
+                    <div class="c-row c-column__experience">
+                        <h3 class="c-headerIcon c-headerIcon__experience">Experience</h3>
+                        <ul>
+                            <li>
+                                <h4>07.2019 - ∞<span> Diebold Nixdorf</span></h4>
+                                <p>Dufry, Vynamic Engage</p>
+                                <p>Position: <b>Junior Test Engineer</b></p>
+                            </li>
+                            <li>
+                                <h4>11.2018 - ∞<span> quaTest</span></h4>
+                                <p>Sole proprietorship</p>
+                                <p>Position: <b> IT Tester</b></p>
+                            <li>
+                                <h4>03.2018 - 06.2018<span> testuj.pl</span></h4>
+                                <p>Practice</p>
+                                <p>Position: <b>Intern</b></p>
+                            </li>
+                            <li>
+                                <h4>05.2013 - 06.2018<span> Bank Millennium SA</span></h4>
+                                <p>Position: <b>Customer Assistant/Consultant</b></p>
+                            </li>
+                            <li>
+                                <h4>11.2011 - 03.2013<span> Sygma Banque SA</span></h4>
+                                <p>Position: <b>Junior/Senior sales specialist</b></p>
+                            </li>
+                            <li>
+                                <h4>11.2010 - 08.2011<span> Lukas bank SA</span></h4>
+                                <p>Position: <b>Junior customer advisor</b></p>
+                            </li>
+                            <li>
+                                <h4>05.2009 - 06.2010<span> Columbus</span></h4>
+                                <p>Position: <b>Customer consultant (Team leader)</b></p>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-row c-column__skills">
+                        <h3 class="c-headerIcon c-headerIcon__skills">Skills</h3>
+                        <ul>
+                            <li>
+                                <p class="c-skillBar c-skillBar__css">Manual tests</p>
+                            </li>
+                            <li>
+                                <p class="c-skillBar c-skillBar__js">MySQL</p>
+                            </li>
+                            <li>
+                                <p class="c-skillBar c-skillBar__php">Jira</p>
+                            </li>
+                        </ul>
+                        <div class="c-skill-tiles">
+                            <p class="c-skill-tile">swagger</p>
+                            <p class="c-skill-tile">confluence</p>
+                            <p class="c-skill-tile">bitbucket</p>
+                            <p class="c-skill-tile">azure</p>
+                            <p class="c-skill-tile">postman - basic</p>
+                            <p class="c-skill-tile">python - basic</p>
+                            <p class="c-skill-tile">greenshot</p>
+                            <p class="c-skill-tile">apower rec</p>
+                            <p class="c-skill-tile">ISTQB</p>
+                            <p class="c-skill-tile">trello</p>
+                            <p class="c-skill-tile">scrum</p>
+                            <p class="c-skill-tile">agile</p>
+                        </div>
+                    </div>
+                    <div class="c-row c-column__hobby">
+                        <h3 class="c-headerIcon c-headerIcon__hobby">Hobbies</h3>
+                        <div>
+                            <i class="fas fa-code"></i>
+                            <i class="fas fa-paw"></i>
+                            <i class="fas fa-puzzle-piece"></i>
+                            <i class="fas fa-film"></i>
+                            <i class="fas fa-hiking"></i>
+                            <i class="fas fa-bug"></i>
+                            <i class="fas fa-theater-masks"></i>
+                            <i class="fas fa-swimmer"></i>
+                        </div>
+                    </div>
+                    <div class="c-row c-column__targets">
+                        <h3 class="c-headerIcon c-headerIcon__targets">Targets</h3>
+                        <p class="c-skill-tile">frontend test automation</p>
+                        <p class="c-skill-tile">backend test automation</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="l-footer">
+            <div class="l-footer__permition p-lang__footer p-lang__footerPl">
+                <p>Wyrażam zgodę na umieszczanie moich danych osobowych w bazie danych firmy i przetwarzanie ich w
+                    celach niezbędnych</br>
+                    do realizacji procesu rekrutacji, zgodnie z Ustawą z dnia 29.08.1997 r. o Ochronie Danych Osobowych
+                    (Dz. U.Nr poz 833)</p>
+            </div>
+            <div class="l-footer__permition p-lang__footer p-lang__footerEn">
+                <p>I consent to my personal data being placed in the company's database and processed for necessary
+                    purposes </br>
+                    to carry out the recruitment process, in accordance with the Act of August 29, 1997 on the
+                    Protection of Personal Data (Journal of Laws No. item 833)</p>
+            </div>
+            <div class="c-row c-links">
+                <ul>
+                    <li class="c-links__adress">
+                        <a href="https://goo.gl/maps/KmdACJdiYV6Gxgi49" target="_blank">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>ul. Krasińskiego 1/29</br>
+                                32-300 Olkusz</br>
+                                Polska</p>
+                        </a>
+                    </li>
+                    <li class="c-links__mail">
+                        <a href="mailto:brzoskaasia@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <p>brzoskaasia@gmail.com</p>
+                        </a>
+                    </li>
+                    <li class="c-links__website">
+                        <a href="https://www.linkedin.com/in/brzoskaasia/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <p>brzoskaasia</p>
+                        </a>
+                    </li>
+                    <li class="c-links__phone">
+                        <a href="tel:+48517535863">
+                            <i class="fas fa-phone"></i>
+                            <p>+48 517 535 863</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

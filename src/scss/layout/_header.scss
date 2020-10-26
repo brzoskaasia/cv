@@ -1,0 +1,124 @@
+.l-header__flex {
+  display: flex;
+  height: calc(100vh - 30px);
+  justify-content: center;
+  align-items: center;
+  transition: height .5s linear;
+  animation: showingDelay 4s linear;
+  .c-links {
+    li {
+      display: inline-block;
+      margin: 10px 25px;
+      p {
+        display: none;
+      }
+    }
+  }
+}
+.l-header__center {
+  text-align: center;
+  .l-header__name,
+  .l-header__subname {
+    margin: 3px 10px;
+  }
+  .l-header__avatar {
+    display: block;
+    margin: 0 auto 45px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid $cl-white;
+    box-shadow: 0 0 2px $cl-font;
+  }
+  .l-header__name,
+  .l-header__subname {
+    display: inline-block;
+    font: normal bold 30px/1 $font-secondary;
+    text-transform: uppercase;
+    text-shadow: 1px 1px $cl-icon;
+    flex-grow: 1;
+  }
+}
+
+@keyframes showingDelay {
+  0% {
+    opacity: 0;
+    visibility: 0;
+    pointer-events: none;
+  }
+  70% {
+    opacity: 0;
+    visibility: 0;
+    pointer-events: none;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen {
+  @include breakpoint(md) {
+    .l-header__center {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .l-header__name {
+        margin-right: 0;
+        order: 1;
+      }
+      .l-header__subname {
+        margin-left: 0;
+        order: 3;
+      }
+      .l-header__avatar {
+        height: 200px;
+        width: 200px;
+        margin: 25px 3vw;
+        order: 2;
+      }
+      .l-header__name,
+      .l-header__subname {
+        font-size: 50px;
+        margin: 25px 0;
+      }
+    }
+  }
+}
+
+@media only print {
+  @include breakpoint(sm) {
+    .l-header__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 254px;
+      .c-links {
+        display: none;
+      }
+      .c-row {
+        margin-bottom: 0;
+      }
+    }
+    .l-header__center {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 0;
+      .l-header__name {
+        margin-right: 0;
+        order: 1;
+      }
+      .l-header__subname {
+        margin-left: 0;
+        order: 3;
+      }
+      .l-header__avatar {
+        margin: 15px 25px 0;
+        order: 2;
+      }
+    }
+  }
+}

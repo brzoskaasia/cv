@@ -1,0 +1,22 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Curriculum Vitae",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cv",
+    "mariusz"
+  ],
+  "author": "Mariusz Brzóska",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "load-grunt-tasks": "latest"
+  }
+}

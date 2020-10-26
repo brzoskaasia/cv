@@ -1,0 +1,131 @@
+.c-menu {
+  p, i {
+    padding: 5px 0;
+    font-size: 16px;
+    color: $cl-white;
+    cursor: pointer;
+  }
+  &__moreInput {
+    &:checked {
+      & + .p-home {
+        .l-aside,
+        .l-main,
+        .l-footer {
+          display: block;
+          animation: showingDelay 2s linear;
+        }
+        .c-menu__more {
+          opacity: 0;
+          visibility: 0;
+          pointer-events: none;
+        }
+        .l-header__flex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 254px;
+          .c-links {
+            display: none;
+          }
+          .c-row {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  &__more {
+    position: fixed;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .2s linear;
+    animation: showingDelay 6s linear;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $cl-icon;
+      font-size: 30px;
+      opacity: .5;
+      transition: opacity .2s linear;
+    }
+  }
+  &__moreLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      i {
+        opacity: 1;
+      }
+    }
+  }
+  &__arrows {
+    position: relative
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+    &:first-child {
+      height: 50px;
+      width: 50px;
+      border: 3px solid lighten($cl-icon, 17%);
+      animation: blink 2s linear .4s infinite;
+    }
+    &:nth-of-type(2) {
+      height: 75px;
+      width: 75px;
+      border: 3px solid lighten($cl-icon, 18%);
+      animation: blink 2s linear .2s infinite;
+    }
+    &:last-child {
+      height: 100px;
+      width: 100px;
+      border: 3px solid lighten($cl-icon, 19%);
+      animation: blink 2s linear infinite;
+      
+    }
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes showingDelay {
+      0% {
+        opacity: 0;
+        visibility: 0;
+        pointer-events: none;
+      }
+      70% {
+        opacity: 0;
+        visibility: 0;
+        pointer-events: none;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

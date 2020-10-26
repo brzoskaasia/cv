@@ -1,0 +1,51 @@
+.c-headerIcon {
+  position: relative;
+  &:before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $font-icon-solid;
+    color: $cl-icon;
+  }
+}
+.c-headerIcon__profile {
+  &:before {
+    content: '\f007';
+  }
+}
+.c-headerIcon__education {
+  &:before {
+    content: '\f19d';
+  }
+}
+.c-headerIcon__language {
+  &:before {
+    content: '\f086';
+  }
+}
+.c-headerIcon__certyfication {
+  &:before {
+    content: '\f091';
+  }
+}
+.c-headerIcon__hobby {
+  &:before {
+    content: '\f21e';
+  }
+}
+.c-headerIcon__experience {
+  &:before {
+    content: '\f085';
+  }
+}
+.c-headerIcon__skills {
+  &:before {
+    content: '\f0ad';
+  }
+}
+.c-headerIcon__targets {
+  &:before {
+    content: '\f201';
+  }
+}
