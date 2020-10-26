@@ -1,0 +1,12 @@
+DirectorySlash Off
+
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^((/?[A-Z][A-Za-z0-9]*)+[^/])$
+RewriteRule ^((/?[A-Z][A-Za-z0-9]*)+[^/])$ index.php?page=$1 [L]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^([a-z0-9][A-Za-z0-9/]*[^/])$ $1/ [R,L]
+
+RewriteRule ^(.*)$ $1 [NC]
+
+ErrorDocument 404 404frompublic.html
+ErrorDocument 500 500frompublic.foo
