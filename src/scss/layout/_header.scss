@@ -66,11 +66,11 @@
       justify-content: space-evenly;
       align-items: center;
       .l-header__name {
-        margin-right: 0;
+        text-align: right;
         order: 1;
       }
       .l-header__subname {
-        margin-left: 0;
+        text-align: left;
         order: 3;
       }
       .l-header__avatar {
@@ -81,8 +81,9 @@
       }
       .l-header__name,
       .l-header__subname {
-        font-size: 50px;
+        width: 250px;
         margin: 25px 0;
+        font-size: 50px;
       }
     }
   }
@@ -107,11 +108,17 @@
       justify-content: space-evenly;
       align-items: center;
       margin-bottom: 0;
+      .l-header__name,
+      .l-header__subname {
+        width: 250px;
+      }
       .l-header__name {
+        text-align: right;
         margin-right: 0;
         order: 1;
       }
       .l-header__subname {
+        text-align: left;
         margin-left: 0;
         order: 3;
       }
