@@ -201,8 +201,9 @@
           display: flex;
         }
         .c-skill-tile {
-          padding: 5px 9px;
+          padding: 5px 6px;
           margin-bottom: 5.2px;
+          letter-spacing: -0.2px;
         }
       }
       & ~ .l-footer {
@@ -219,8 +220,9 @@
           display: flex;
         }
         .c-skill-tile {
-          padding: 5px 9px;
+          padding: 5px 6px;
           margin-bottom: 4.9px;
+          letter-spacing: -0.2px;
         }
       }
       & ~ .l-footer {
